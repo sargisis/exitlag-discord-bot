@@ -5,7 +5,7 @@ import "github.com/bwmarrin/discordgo"
 func GetShopEmbed() *discordgo.MessageEmbed {
 	return &discordgo.MessageEmbed{
 		Title:       "ExitLag Store",
-		Description: "**🚀 Уменьши пинг и убери лаги с ExitLag!**\n\n🔹 **Игровой VPN №1**\n🔹 **Оптимизация маршрутов**\n🔹 **Повышение FPS**\n\n**🛒 Тарифы:**\n🕐 **1 Месяц** — 349₽\n🕒 **3 Месяца** — 799₽\n📅 **12 Месяцев** — 2299₽\n\nНажмите кнопку ниже, чтобы оформить подписку.",
+		Description: "**🚀 Уменьши пинг и убери лаги с ExitLag!**\n\n🔹 **Игровой VPN №1**\n🔹 **Оптимизация маршрутов**\n🔹 **Повышение FPS**\n\n**🛒 Тарифы:**\n🕐 **1 Месяц** — 398₽\n🕒 **3 Месяца** — 911₽\n📅 **12 Месяцев** — 2622₽\n\nНажмите кнопку ниже, чтобы оформить подписку.",
 		Color:       0xFF0000, // Red
 		Footer: &discordgo.MessageEmbedFooter{
 			Text: "ExitLag Store | Low Ping High FPS",
