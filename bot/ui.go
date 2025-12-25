@@ -37,17 +37,17 @@ func GetTicketButtons() []discordgo.MessageComponent {
 		discordgo.ActionsRow{
 			Components: []discordgo.MessageComponent{
 				discordgo.Button{
-					Label:    "1 Месяц (349₽)",
+					Label:    "1 Месяц (398₽)",
 					Style:    discordgo.SecondaryButton,
 					CustomID: "pay_1m",
 				},
 				discordgo.Button{
-					Label:    "3 Месяца (799₽)",
+					Label:    "3 Месяца (911₽)",
 					Style:    discordgo.SecondaryButton,
 					CustomID: "pay_3m",
 				},
 				discordgo.Button{
-					Label:    "12 Месяцев (2299₽)",
+					Label:    "12 Месяцев (2622₽)",
 					Style:    discordgo.SecondaryButton,
 					CustomID: "pay_12m",
 				},
