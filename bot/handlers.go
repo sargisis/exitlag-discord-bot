@@ -38,11 +38,11 @@ func InteractionHandler(s *discordgo.Session, i *discordgo.InteractionCreate) {
 		case "create_ticket":
 			handleCreateTicket(s, i, cfg)
 		case "pay_1m":
-			handlePaymentResponse(s, i, "1 Месяц", "349")
+			handlePaymentResponse(s, i, "1 Месяц", "398")
 		case "pay_3m":
-			handlePaymentResponse(s, i, "3 Месяца", "799")
+			handlePaymentResponse(s, i, "3 Месяца", "911")
 		case "pay_12m":
-			handlePaymentResponse(s, i, "12 Месяцев", "2299")
+			handlePaymentResponse(s, i, "12 Месяцев", "2622")
 		case "close_ticket":
 			s.ChannelDelete(i.ChannelID)
 		}
@@ -119,7 +119,7 @@ func handlePaymentResponse(s *discordgo.Session, i *discordgo.InteractionCreate,
 	err := s.InteractionRespond(i.Interaction, &discordgo.InteractionResponse{
 		Type: discordgo.InteractionResponseChannelMessageWithSource,
 		Data: &discordgo.InteractionResponseData{
-			Content: fmt.Sprintf("**Оплата тарифа: %s**\nСумма к оплате: **%s₽**\n\n1. Нажмите кнопку оплаты ниже.\n2. Введите сумму **%s**.\n3. Пришлите скриншот чека сюда.", planName, price, price),
+			Content: fmt.Sprintf("**Оплата тарифа: %s**\nСумма к оплате: **%s₽**\n\n1. Нажмите кнопку оплаты ниже.\n2. Введите сумму **%s**.\n", planName, price, price),
 			Components: []discordgo.MessageComponent{
 				discordgo.ActionsRow{
 					Components: []discordgo.MessageComponent{
