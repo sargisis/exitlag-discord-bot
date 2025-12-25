@@ -126,7 +126,7 @@ func handlePaymentResponse(s *discordgo.Session, i *discordgo.InteractionCreate,
 						discordgo.Button{
 							Label: "Оплатить",
 							Style: discordgo.LinkButton,
-							URL:   "https://www.tbank.ru/cf/7JjlBprFYZs",
+							URL:   "https://funpay.com/go/ovldershop",
 							Emoji: &discordgo.ComponentEmoji{Name: "💳"},
 						},
 					},
